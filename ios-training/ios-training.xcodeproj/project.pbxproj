@@ -11,6 +11,7 @@
 		9CDFBEA322C4C649001235CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDFBEA222C4C649001235CA /* ViewController.swift */; };
 		9CDFBEA822C4C64A001235CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CDFBEA722C4C64A001235CA /* Assets.xcassets */; };
 		9CDFBEAB22C4C64A001235CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CDFBEA922C4C64A001235CA /* LaunchScreen.storyboard */; };
+		9CDFBEB322C4CD51001235CA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CDFBEB222C4CD51001235CA /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		9CDFBEA722C4C64A001235CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CDFBEAA22C4C64A001235CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CDFBEAC22C4C64A001235CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CDFBEB222C4CD51001235CA /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				9CDFBEA022C4C649001235CA /* AppDelegate.swift */,
 				9CDFBEA222C4C649001235CA /* ViewController.swift */,
+				9CDFBEB222C4CD51001235CA /* ViewController.xib */,
 				9CDFBEA722C4C64A001235CA /* Assets.xcassets */,
 				9CDFBEA922C4C64A001235CA /* LaunchScreen.storyboard */,
 				9CDFBEAC22C4C64A001235CA /* Info.plist */,
@@ -120,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CDFBEAB22C4C64A001235CA /* LaunchScreen.storyboard in Resources */,
+				9CDFBEB322C4CD51001235CA /* ViewController.xib in Resources */,
 				9CDFBEA822C4C64A001235CA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
