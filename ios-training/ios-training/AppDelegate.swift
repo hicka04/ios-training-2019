@@ -16,9 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = UINavigationController(rootViewController: FirstViewController())
+        let firstView = UINavigationController(rootViewController: FirstViewController())
+        firstView.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        let secondView = UINavigationController(rootViewController: SecondViewController())
+        secondView.tabBarItem = UITabBarItem(title: "second", image: nil, tag: 0)
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [
+            firstView,
+            secondView
+        ]
         
         self.window = window
+        window.rootViewController = tabBarController
         
         window.makeKeyAndVisible()
         
