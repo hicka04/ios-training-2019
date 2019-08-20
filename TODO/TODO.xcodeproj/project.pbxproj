@@ -13,6 +13,8 @@
 		9C0CE5CC230BF614007DBF42 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CE5CA230BF614007DBF42 /* TodoListViewController.swift */; };
 		9C0CE5CD230BF614007DBF42 /* TodoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CE5CB230BF614007DBF42 /* TodoListViewController.xib */; };
 		9C0CE5CF230C001D007DBF42 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CE5CE230C001D007DBF42 /* Todo.swift */; };
+		9C0CE5D2230C0305007DBF42 /* CreateTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CE5D0230C0305007DBF42 /* CreateTodoViewController.swift */; };
+		9C0CE5D3230C0305007DBF42 /* CreateTodoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C0CE5D1230C0305007DBF42 /* CreateTodoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9C0CE5CA230BF614007DBF42 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		9C0CE5CB230BF614007DBF42 /* TodoListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoListViewController.xib; sourceTree = "<group>"; };
 		9C0CE5CE230C001D007DBF42 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		9C0CE5D0230C0305007DBF42 /* CreateTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTodoViewController.swift; sourceTree = "<group>"; };
+		9C0CE5D1230C0305007DBF42 /* CreateTodoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateTodoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				9C0CE5CA230BF614007DBF42 /* TodoListViewController.swift */,
 				9C0CE5CB230BF614007DBF42 /* TodoListViewController.xib */,
 				9C0CE5CE230C001D007DBF42 /* Todo.swift */,
+				9C0CE5D0230C0305007DBF42 /* CreateTodoViewController.swift */,
+				9C0CE5D1230C0305007DBF42 /* CreateTodoViewController.xib */,
 			);
 			path = TODO;
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 			files = (
 				9C0CE5CD230BF614007DBF42 /* TodoListViewController.xib in Resources */,
 				9C0CE5C3230BF3C2007DBF42 /* LaunchScreen.storyboard in Resources */,
+				9C0CE5D3230C0305007DBF42 /* CreateTodoViewController.xib in Resources */,
 				9C0CE5C0230BF3C2007DBF42 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +147,7 @@
 			files = (
 				9C0CE5CC230BF614007DBF42 /* TodoListViewController.swift in Sources */,
 				9C0CE5CF230C001D007DBF42 /* Todo.swift in Sources */,
+				9C0CE5D2230C0305007DBF42 /* CreateTodoViewController.swift in Sources */,
 				9C0CE5B9230BF3C0007DBF42 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
