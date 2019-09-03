@@ -11,7 +11,16 @@
 		9CDFBEA322C4C649001235CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDFBEA222C4C649001235CA /* ViewController.swift */; };
 		9CDFBEA822C4C64A001235CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CDFBEA722C4C64A001235CA /* Assets.xcassets */; };
 		9CDFBEAB22C4C64A001235CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CDFBEA922C4C64A001235CA /* LaunchScreen.storyboard */; };
+<<<<<<< HEAD
 		9CDFBEB322C4CD51001235CA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CDFBEB222C4CD51001235CA /* ViewController.xib */; };
+=======
+		B8E0F50D2302BAD600DE88E1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E0F50B2302BAD600DE88E1 /* FirstViewController.swift */; };
+		B8E0F50E2302BAD600DE88E1 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8E0F50C2302BAD600DE88E1 /* FirstViewController.xib */; };
+		B8E0F5112302C0EF00DE88E1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E0F50F2302C0EF00DE88E1 /* SecondViewController.swift */; };
+		B8E0F5122302C0EF00DE88E1 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8E0F5102302C0EF00DE88E1 /* SecondViewController.xib */; };
+		B8E0F5152302C54300DE88E1 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E0F5132302C54300DE88E1 /* ModalViewController.swift */; };
+		B8E0F5162302C54300DE88E1 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8E0F5142302C54300DE88E1 /* ModalViewController.xib */; };
+>>>>>>> 8f5554e340906d6dd7073bd746f996a4b2f74113
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +30,16 @@
 		9CDFBEA722C4C64A001235CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CDFBEAA22C4C64A001235CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CDFBEAC22C4C64A001235CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		9CDFBEB222C4CD51001235CA /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+=======
+		B8E0F50B2302BAD600DE88E1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		B8E0F50C2302BAD600DE88E1 /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		B8E0F50F2302C0EF00DE88E1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B8E0F5102302C0EF00DE88E1 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		B8E0F5132302C54300DE88E1 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		B8E0F5142302C54300DE88E1 /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
+>>>>>>> 8f5554e340906d6dd7073bd746f996a4b2f74113
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +78,12 @@
 				9CDFBEA722C4C64A001235CA /* Assets.xcassets */,
 				9CDFBEA922C4C64A001235CA /* LaunchScreen.storyboard */,
 				9CDFBEAC22C4C64A001235CA /* Info.plist */,
+				B8E0F50B2302BAD600DE88E1 /* FirstViewController.swift */,
+				B8E0F50C2302BAD600DE88E1 /* FirstViewController.xib */,
+				B8E0F50F2302C0EF00DE88E1 /* SecondViewController.swift */,
+				B8E0F5102302C0EF00DE88E1 /* SecondViewController.xib */,
+				B8E0F5132302C54300DE88E1 /* ModalViewController.swift */,
+				B8E0F5142302C54300DE88E1 /* ModalViewController.xib */,
 			);
 			path = "ios-training";
 			sourceTree = "<group>";
@@ -125,6 +149,13 @@
 				9CDFBEAB22C4C64A001235CA /* LaunchScreen.storyboard in Resources */,
 				9CDFBEB322C4CD51001235CA /* ViewController.xib in Resources */,
 				9CDFBEA822C4C64A001235CA /* Assets.xcassets in Resources */,
+<<<<<<< HEAD
+=======
+				B8E0F5162302C54300DE88E1 /* ModalViewController.xib in Resources */,
+				9CDFBEA622C4C649001235CA /* Main.storyboard in Resources */,
+				B8E0F50E2302BAD600DE88E1 /* FirstViewController.xib in Resources */,
+				B8E0F5122302C0EF00DE88E1 /* SecondViewController.xib in Resources */,
+>>>>>>> 8f5554e340906d6dd7073bd746f996a4b2f74113
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E0F5112302C0EF00DE88E1 /* SecondViewController.swift in Sources */,
+				B8E0F5152302C54300DE88E1 /* ModalViewController.swift in Sources */,
+				B8E0F50D2302BAD600DE88E1 /* FirstViewController.swift in Sources */,
 				9CDFBEA322C4C649001235CA /* ViewController.swift in Sources */,
 				9CDFBEA122C4C649001235CA /* AppDelegate.swift in Sources */,
 			);
