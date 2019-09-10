@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Todo {
+struct Todo: Equatable {
     
     let title: String
 }
