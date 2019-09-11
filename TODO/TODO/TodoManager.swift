@@ -12,13 +12,31 @@ class TodoManager {
     
     static let shared = TodoManager()
     
-    var todoList: [Todo] = []
-    var doneList: [Todo] = []
+    private(set) var todoList: [Todo] = []
+    private(set) var doneList: [Todo] = []
     
     private init() {}
     
     func add(todo: Todo) {
         todoList.append(todo)
+    }
+    
+    func remove(at index: Int) {
+        guard index < todoList.count else {
+            return
+        }
+        
+        todoList.remove(at: index)
+    }
+    
+    func remove(todo: Todo) {
+        guard todoList.contains(todo) else {
+            return
+        }
+        
+        todoList.removeAll { item in
+            return item == todo
+        }
     }
     
     func markDone(at index: Int) {

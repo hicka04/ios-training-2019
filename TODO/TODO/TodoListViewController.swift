@@ -12,8 +12,7 @@ class TodoListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var todoList: [Todo] = []
-    var doneList: [Todo] = []
+    let todoManager = TodoManager.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +27,6 @@ class TodoListViewController: UIViewController {
                                            target: self,
                                            action: #selector(createTodoButtonDidTap))
         navigationItem.rightBarButtonItem = createButton
-        
-        todoList.append(Todo(title: "洗濯"))
     }
     
     @objc func createTodoButtonDidTap() {
@@ -44,12 +41,12 @@ class TodoListViewController: UIViewController {
 extension TodoListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return todoList.count
+        return todoManager.todoList.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "todoCell", for: indexPath)
-        cell.textLabel?.text = todoList[indexPath.row].title
+        cell.textLabel?.text = todoManager.todoList[indexPath.row].title
         return cell
     }
     
@@ -60,8 +57,7 @@ extension TodoListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let doneButton = UITableViewRowAction(style: .normal, title: "Done") { _, _ in
             tableView.beginUpdates()
-            self.doneList.append(self.todoList[indexPath.row])
-            self.todoList.remove(at: indexPath.row)
+            self.todoManager.markDone(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.endUpdates()
         }
@@ -69,7 +65,7 @@ extension TodoListViewController: UITableViewDelegate, UITableViewDataSource {
         
         let deleteButton = UITableViewRowAction(style: .destructive, title: "Delete") { _, _ in
             tableView.beginUpdates()
-            self.todoList.remove(at: indexPath.row)
+            self.todoManager.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.endUpdates()
         }
@@ -83,9 +79,9 @@ extension TodoListViewController: CreateTodoViewControllerDelegate {
     
     func controller(_ controller: CreateTodoViewController, didCreateTodo todo: Todo) {
         tableView.beginUpdates()
-        tableView.insertRows(at: [IndexPath(row: todoList.count, section: 0)],
+        tableView.insertRows(at: [IndexPath(row: todoManager.todoList.count, section: 0)],
                              with: .automatic)
-        todoList.append(todo)
+        todoManager.add(todo: todo)
         tableView.endUpdates()
     }
 }

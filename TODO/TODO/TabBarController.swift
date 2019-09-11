@@ -9,25 +9,19 @@
 import UIKit
 
 class TabBarController: UITabBarController {
-    
-    let todoListView: TodoListViewController = {
-        let todoListView = TodoListViewController()
-        todoListView.tabBarItem = UITabBarItem(title: "TODO", image: nil, tag: 0)
-        return todoListView
-    }()
-    
-    let doneListView: DoneListViewController = {
-        let doneListView = DoneListViewController()
-        doneListView.tabBarItem = UITabBarItem(title: "DONE", image: nil, tag: 1)
-        return doneListView
-    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let todoListView = UINavigationController(rootViewController: TodoListViewController())
+        todoListView.tabBarItem = UITabBarItem(title: "TODO", image: nil, tag: 0)
+        
+        let doneListView = UINavigationController(rootViewController: DoneListViewController())
+        doneListView.tabBarItem = UITabBarItem(title: "DONE", image: UIImage(named: "done-list"), tag: 1)
+        
         viewControllers = [
-            UINavigationController(rootViewController: todoListView),
-            UINavigationController(rootViewController: doneListView)
+            todoListView,
+            doneListView
         ]
     }
 }
